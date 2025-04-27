@@ -1,0 +1,14 @@
+C:/Users/wiley/repos/newspaper-sudoku/build/CMakeFiles/Sudoku.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/CMakeFiles/edit_cache.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/CMakeFiles/rebuild_cache.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/CMakeFiles/SDL3-shared.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/CMakeFiles/SDL3_test.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/CMakeFiles/SDL_uclibc.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/CMakeFiles/edit_cache.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/CMakeFiles/rebuild_cache.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL_image/CMakeFiles/SDL3_image-shared.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL_image/CMakeFiles/edit_cache.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL_image/CMakeFiles/rebuild_cache.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/NetCommon/CMakeFiles/NetCommon.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/NetCommon/CMakeFiles/edit_cache.dir
+C:/Users/wiley/repos/newspaper-sudoku/build/libs/NetCommon/CMakeFiles/rebuild_cache.dir

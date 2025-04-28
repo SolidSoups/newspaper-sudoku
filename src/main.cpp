@@ -2,12 +2,13 @@
 #include <iostream>
 
 #include "GameEngine.hpp"
-#include "SDL3/SDL_timer.h"
+#include "game-common.hpp"
+#include "sdl-common.hpp"
 
 GameEngine *game;
 
 int main() {
-  std::cout << "[Program] Started\n";
+  ge::log_msg("Program", "Started!");
 
   // Setup control of frame time
   const int FPS = 120;
@@ -18,6 +19,7 @@ int main() {
   game = new GameEngine();
   game->init("Sudoku", 1024, 768);
 
+  ge::log_msg("Program", "Starting game loop");
   while (game->isRunning()) {
     frameStart = SDL_GetTicks();
 
@@ -34,6 +36,6 @@ int main() {
   game->clean();
   delete game;
 
-  std::cout << "[Program] Ended\n";
+  ge::log_msg("Program", "Ended!");
   return EXIT_SUCCESS;
 }

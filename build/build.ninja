@@ -65,9 +65,9 @@ build CMakeFiles/Sudoku.dir/src/GameEngine.cpp.obj: CXX_COMPILER__Sudoku_unscann
   OBJECT_DIR = CMakeFiles\Sudoku.dir
   OBJECT_FILE_DIR = CMakeFiles\Sudoku.dir\src
 
-build CMakeFiles/Sudoku.dir/src/ResourceManager.cpp.obj: CXX_COMPILER__Sudoku_unscanned_Debug C$:/Users/wiley/repos/newspaper-sudoku/src/ResourceManager.cpp || cmake_object_order_depends_target_Sudoku
+build CMakeFiles/Sudoku.dir/src/AssetManager.cpp.obj: CXX_COMPILER__Sudoku_unscanned_Debug C$:/Users/wiley/repos/newspaper-sudoku/src/AssetManager.cpp || cmake_object_order_depends_target_Sudoku
   DEFINES = -DASIO_STANDALONE -DSDL_MAIN_HANDLED
-  DEP_FILE = CMakeFiles\Sudoku.dir\src\ResourceManager.cpp.obj.d
+  DEP_FILE = CMakeFiles\Sudoku.dir\src\AssetManager.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include
   OBJECT_DIR = CMakeFiles\Sudoku.dir
@@ -105,6 +105,14 @@ build CMakeFiles/Sudoku.dir/src/GameInput.cpp.obj: CXX_COMPILER__Sudoku_unscanne
   OBJECT_DIR = CMakeFiles\Sudoku.dir
   OBJECT_FILE_DIR = CMakeFiles\Sudoku.dir\src
 
+build CMakeFiles/Sudoku.dir/src/ScreenCollider.cpp.obj: CXX_COMPILER__Sudoku_unscanned_Debug C$:/Users/wiley/repos/newspaper-sudoku/src/ScreenCollider.cpp || cmake_object_order_depends_target_Sudoku
+  DEFINES = -DASIO_STANDALONE -DSDL_MAIN_HANDLED
+  DEP_FILE = CMakeFiles\Sudoku.dir\src\ScreenCollider.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include
+  OBJECT_DIR = CMakeFiles\Sudoku.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sudoku.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Sudoku
@@ -113,7 +121,7 @@ build CMakeFiles/Sudoku.dir/src/GameInput.cpp.obj: CXX_COMPILER__Sudoku_unscanne
 #############################################
 # Link the executable Debug\Sudoku.exe
 
-build Debug/Sudoku.exe: CXX_EXECUTABLE_LINKER__Sudoku_Debug CMakeFiles/Sudoku.dir/src/main.cpp.obj CMakeFiles/Sudoku.dir/src/GameEngine.cpp.obj CMakeFiles/Sudoku.dir/src/ResourceManager.cpp.obj CMakeFiles/Sudoku.dir/src/Texture.cpp.obj CMakeFiles/Sudoku.dir/src/SudokuBoard.cpp.obj CMakeFiles/Sudoku.dir/src/GameRenderer.cpp.obj CMakeFiles/Sudoku.dir/src/GameInput.cpp.obj | libs/SDL_image/libSDL3_image.dll.a libs/NetCommon/libNetCommon.a libs/SDL/libSDL3.dll.a C$:/Users/wiley/repos/newspaper-sudoku/libs/SDL/src/dynapi/SDL_dynapi.sym || Debug/SDL3.dll Debug/SDL3_image.dll libs/NetCommon/libNetCommon.a
+build Debug/Sudoku.exe: CXX_EXECUTABLE_LINKER__Sudoku_Debug CMakeFiles/Sudoku.dir/src/main.cpp.obj CMakeFiles/Sudoku.dir/src/GameEngine.cpp.obj CMakeFiles/Sudoku.dir/src/AssetManager.cpp.obj CMakeFiles/Sudoku.dir/src/Texture.cpp.obj CMakeFiles/Sudoku.dir/src/SudokuBoard.cpp.obj CMakeFiles/Sudoku.dir/src/GameRenderer.cpp.obj CMakeFiles/Sudoku.dir/src/GameInput.cpp.obj CMakeFiles/Sudoku.dir/src/ScreenCollider.cpp.obj | libs/SDL_image/libSDL3_image.dll.a libs/NetCommon/libNetCommon.a libs/SDL/libSDL3.dll.a C$:/Users/wiley/repos/newspaper-sudoku/libs/SDL/src/dynapi/SDL_dynapi.sym || Debug/SDL3.dll Debug/SDL3_image.dll libs/NetCommon/libNetCommon.a
   FLAGS = -g
   LINK_LIBRARIES = libs/SDL_image/libSDL3_image.dll.a  libs/NetCommon/libNetCommon.a  libs/SDL/libSDL3.dll.a  -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Sudoku.dir

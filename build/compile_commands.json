@@ -13,9 +13,9 @@
 },
 {
   "directory": "C:/Users/wiley/repos/newspaper-sudoku/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DASIO_STANDALONE -DSDL_MAIN_HANDLED -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\Sudoku.dir\\src\\ResourceManager.cpp.obj -c C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\ResourceManager.cpp",
-  "file": "C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\ResourceManager.cpp",
-  "output": "CMakeFiles\\Sudoku.dir\\src\\ResourceManager.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DASIO_STANDALONE -DSDL_MAIN_HANDLED -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\Sudoku.dir\\src\\AssetManager.cpp.obj -c C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\AssetManager.cpp",
+  "file": "C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\AssetManager.cpp",
+  "output": "CMakeFiles\\Sudoku.dir\\src\\AssetManager.cpp.obj"
 },
 {
   "directory": "C:/Users/wiley/repos/newspaper-sudoku/build",
@@ -40,6 +40,12 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DASIO_STANDALONE -DSDL_MAIN_HANDLED -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\Sudoku.dir\\src\\GameInput.cpp.obj -c C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\GameInput.cpp",
   "file": "C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\GameInput.cpp",
   "output": "CMakeFiles\\Sudoku.dir\\src\\GameInput.cpp.obj"
+},
+{
+  "directory": "C:/Users/wiley/repos/newspaper-sudoku/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DASIO_STANDALONE -DSDL_MAIN_HANDLED -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\Sudoku.dir\\src\\ScreenCollider.cpp.obj -c C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\ScreenCollider.cpp",
+  "file": "C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\ScreenCollider.cpp",
+  "output": "CMakeFiles\\Sudoku.dir\\src\\ScreenCollider.cpp.obj"
 },
 {
   "directory": "C:/Users/wiley/repos/newspaper-sudoku/build",

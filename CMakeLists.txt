@@ -22,11 +22,12 @@ add_subdirectory(libs/NetCommon)
 set(SOURCES
     src/main.cpp
     src/GameEngine.cpp
-    src/ResourceManager.cpp
+    src/AssetManager.cpp
     src/Texture.cpp
     src/SudokuBoard.cpp
     src/GameRenderer.cpp
     src/GameInput.cpp
+    src/ScreenCollider.cpp
 )
 
 # Collect header files (this makes clangd and IDEs happy)
@@ -39,11 +40,12 @@ set(HEADERS
     include/GameInput.hpp
     include/GameObject.hpp
     include/GameObjects.hpp
-    include/ResourceManager.hpp
+    include/AssetManager.hpp
     include/Texture.hpp
     include/ECS.hpp
     include/Components.hpp
     include/vector2.hpp
+    include/ScreenCollider.hpp
 )
 
 # Create the executable

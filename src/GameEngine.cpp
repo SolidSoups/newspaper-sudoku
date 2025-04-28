@@ -41,6 +41,8 @@ void GameEngine::init(const char *windowTitle, int width, int height) {
   // Set flags
   bIsRunning = true;
   bIsClean = false;
+
+  ge::log_msg("GameEngine", "Initialized!");
 }
 
 void GameEngine::handleEvents() {

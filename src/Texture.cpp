@@ -1,25 +1,27 @@
 #include "Texture.hpp"
-#include "ResourceManager.hpp"
+#include "AssetManager.hpp"
+#include "SDL3/SDL_surface.h"
 #include "game-common.hpp"
 
 namespace ge {
 Texture::Texture(const char *filePath, SDL_FRect _src) {
-  std::shared_ptr<SDL_Texture> tex(ResourceManager::loadTexture(filePath),
-                                   SDL_DestroyTexture);
+  std::shared_ptr<SDL_Texture> tex = AssetManager::loadTexture(filePath);
   texture = std::move(tex);
   if (!texture)
     ge::throw_runtime_error("Texture", "Failed to load texture '" +
                                            std::string(filePath) + "'");
   src = _src;
+  SDL_SetTextureScaleMode(texture.get(), SDL_SCALEMODE_NEAREST);
 }
 
 std::vector<Texture> Texture::CreateSheet(const char *filePath,
                                           const TextureSplitProperties &props) {
-  std::shared_ptr<SDL_Texture> sharedTex(ResourceManager::loadTexture(filePath),
-                                         SDL_DestroyTexture);
+  std::shared_ptr<SDL_Texture> sharedTex = AssetManager::loadTexture(filePath);
   if (!sharedTex)
     ge::throw_runtime_error("Texture", "Failed to load texture '" +
                                            std::string(filePath) + "'");
+
+  SDL_SetTextureScaleMode(sharedTex.get(), SDL_SCALEMODE_NEAREST);
 
   // TODO: do some scaling maybe?
   // Set default sizes

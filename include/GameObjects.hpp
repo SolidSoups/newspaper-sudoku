@@ -14,16 +14,32 @@ public:
 private:
   // Some helper functions
   void drawSudokuBoard();
-  bool isPosInBounds(const vector2& pos);
+  void drawPlacedNumbers();
 
 private:
   // Textures
   std::vector<Texture> borderTextures;
   enum BorderTextureID { CHECKER, TOP, RIGHT, BOTTOM, LEFT };
 
+  std::vector<Texture> numberTextures;
+  enum NumberTextureID {
+    ZERO,
+    ONE,
+    TWO,
+    THREE,
+    FOUR,
+    FIVE,
+    SIX,
+    SEVEN,
+    EIGHT,
+    NINE
+  };
+
   Texture selectedTexture;
 
 private:
-  float posX, posY;
+  std::array<int, 81> placedNumbers{};
+  int getCell(const size_t &col, const size_t &row);
+  void setCell(const size_t &col, const size_t &row, const int &value);
 };
 } // namespace ge

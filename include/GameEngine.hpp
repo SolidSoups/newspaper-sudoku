@@ -14,7 +14,7 @@ public:
   // Game Engine Essentials
   void init(const char *windowTitle, int width, int height);
   void handleEvents();
-  void update();
+  void update(const float &deltaTime);
   void render();
   void clean();
 

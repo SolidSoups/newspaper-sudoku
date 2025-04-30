@@ -1,5 +1,7 @@
 #include "GameRenderer.hpp"
 
+#include "game-common.hpp"
+
 // static
 SDL_Renderer *ge::GameRenderer::renderer = nullptr;
 

@@ -1,12 +1,16 @@
 #include "GameEngine.hpp"
 
+#include "AssetManager.hpp"
 #include "GameInput.hpp"
 #include "GameObjects.hpp"
 #include "GameRenderer.hpp"
-#include "SDL3/SDL_render.h"
 #include "game-common.hpp"
+#include "sdl-common.hpp"
 
 ge::SudokuBoard board;
+ge::UIToolbar uiToolbar;
+ge::UIToolbarNumberSelection *numberSelection;
+bool isSpawned = false;
 
 GameEngine::GameEngine() {}
 GameEngine::~GameEngine() {
@@ -36,7 +40,10 @@ void GameEngine::init(const char *windowTitle, int width, int height) {
   ge::GameRenderer::windowWidth = width;
   ge::GameRenderer::windowHeight = height;
 
+  assetDefaults::loadDefaultTextures();
+
   board.doInit();
+  uiToolbar.doInit();
 
   // Set flags
   bIsRunning = true;
@@ -48,6 +55,7 @@ void GameEngine::init(const char *windowTitle, int width, int height) {
 void GameEngine::handleEvents() {
   SDL_Event event;
   SDL_PollEvent(&event);
+  ge::GameInput::poll();
   switch (event.type) {
   case SDL_EVENT_QUIT:
     bIsRunning = false;
@@ -57,13 +65,36 @@ void GameEngine::handleEvents() {
   }
 }
 
-void GameEngine::update() { ge::GameInput::poll(); }
+void GameEngine::update(const float &deltaTime) {
+  board.update(deltaTime);
+  uiToolbar.update(deltaTime);
+
+  vector2 mousePos = ge::GameInput::getMousePosition();
+  if (!isSpawned && mousePos.x > 400) {
+    isSpawned = true;
+    numberSelection = new ge::UIToolbarNumberSelection();
+    numberSelection->doInit();
+    numberSelection->setTextureID(2);
+    numberSelection->transform.position = {0,
+                                           uiToolbar.transform.position.y + 64};
+  }
+
+  if (isSpawned && numberSelection->isDestroyed()) {
+    isSpawned = false;
+    delete numberSelection;
+  }
+  if (isSpawned)
+    numberSelection->update(deltaTime);
+}
 
 void GameEngine::render() {
   // Core render loop
   SDL_RenderClear(ge::GameRenderer::renderer);
 
   board.render();
+  uiToolbar.render();
+  if (isSpawned)
+    numberSelection->render();
 
   SDL_RenderPresent(ge::GameRenderer::renderer);
 }

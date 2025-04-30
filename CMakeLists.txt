@@ -20,32 +20,34 @@ add_subdirectory(libs/NetCommon)
 
 # Collect source files
 set(SOURCES
-    src/main.cpp
-    src/GameEngine.cpp
-    src/AssetManager.cpp
-    src/Texture.cpp
-    src/SudokuBoard.cpp
-    src/GameRenderer.cpp
-    src/GameInput.cpp
-    src/ScreenCollider.cpp
+  src/main.cpp
+  src/AssetManager.cpp
+  src/GameEngine.cpp
+  src/GameInput.cpp
+  src/GameRenderer.cpp
+  src/ScreenCollider.cpp
+  src/SudokuBoard.cpp
+  src/UIToolbar.cpp
+  src/Texture.cpp
+  src/UIToolbarNumberSelection.cpp
 )
 
 # Collect header files (this makes clangd and IDEs happy)
 set(HEADERS
-    include/sdl-common.hpp
-    include/std-common.hpp
-    include/game-common.hpp
-    include/GameEngine.hpp
-    include/GameRenderer.hpp
-    include/GameInput.hpp
-    include/GameObject.hpp
-    include/GameObjects.hpp
-    include/AssetManager.hpp
-    include/Texture.hpp
-    include/ECS.hpp
-    include/Components.hpp
-    include/vector2.hpp
-    include/ScreenCollider.hpp
+  include/AssetManager.hpp
+  include/Components.hpp
+  include/ECS.hpp
+  include/GameEngine.hpp
+  include/GameInput.hpp
+  include/GameObject.hpp
+  include/GameObjects.hpp
+  include/GameRenderer.hpp
+  include/ScreenCollider.hpp
+  include/Texture.hpp
+  include/game-common.hpp
+  include/sdl-common.hpp
+  include/std-common.hpp
+  include/vector2.hpp
 )
 
 # Create the executable

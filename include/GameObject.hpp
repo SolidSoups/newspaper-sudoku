@@ -12,7 +12,7 @@ public:
 
 public:
   virtual void onInit() = 0;
-  virtual void update() = 0;
+  virtual void update(const float &deltaTime) = 0;
   virtual void render() = 0;
   virtual void onClean() = 0;
   virtual void onDestroy() = 0;
@@ -48,7 +48,7 @@ private:
   bool bIsDestroyed = false;
   bool bIsInitialized = false;
 
-protected:
+public:
   ecs::Transform &transform;
 };
 

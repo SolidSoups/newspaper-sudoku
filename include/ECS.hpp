@@ -48,7 +48,7 @@ private:
 
 public:
   bool isActive() { return active; }
-  void destroy() { active = false; }
+  void destroySelf() { active = false; }
 
   template <typename T> bool hasComponent() const {
     return componentBitSet[getComponentTypeID<T>()];

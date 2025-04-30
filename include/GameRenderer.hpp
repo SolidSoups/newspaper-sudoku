@@ -1,8 +1,7 @@
 #pragma once
 
 #include "Texture.hpp"
-#include "sdl-common.hpp"
-#include "game-common.hpp"
+struct SDL_Renderer;
 
 // wrapper for the SDL renderer
 namespace ge {

@@ -29,7 +29,7 @@ set(SOURCES
   src/SudokuBoard.cpp
   src/UIToolbar.cpp
   src/Texture.cpp
-  src/UIToolbarNumberSelection.cpp
+  src/UIToolbarNumber.cpp
 )
 
 # Collect header files (this makes clangd and IDEs happy)

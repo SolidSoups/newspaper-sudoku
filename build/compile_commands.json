@@ -55,9 +55,9 @@
 },
 {
   "directory": "C:/Users/wiley/repos/newspaper-sudoku/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DASIO_STANDALONE -DSDL_MAIN_HANDLED -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\Sudoku.dir\\src\\UIToolbarNumberSelection.cpp.obj -c C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\UIToolbarNumberSelection.cpp",
-  "file": "C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\UIToolbarNumberSelection.cpp",
-  "output": "CMakeFiles\\Sudoku.dir\\src\\UIToolbarNumberSelection.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DASIO_STANDALONE -DSDL_MAIN_HANDLED -IC:/Users/wiley/repos/newspaper-sudoku/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL/include -IC:/Users/wiley/repos/newspaper-sudoku/libs/SDL_image/include -IC:/Users/wiley/repos/newspaper-sudoku/build/libs/SDL/include-revision -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon -IC:/Users/wiley/repos/newspaper-sudoku/libs/NetCommon/../libs/asio-1.30.2/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\Sudoku.dir\\src\\UIToolbarNumber.cpp.obj -c C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\UIToolbarNumber.cpp",
+  "file": "C:\\Users\\wiley\\repos\\newspaper-sudoku\\src\\UIToolbarNumber.cpp",
+  "output": "CMakeFiles\\Sudoku.dir\\src\\UIToolbarNumber.cpp.obj"
 },
 {
   "directory": "C:/Users/wiley/repos/newspaper-sudoku/build",

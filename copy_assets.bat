@@ -1,0 +1,3 @@
+@echo off
+echo Copying assets folder to build directory...
+xcopy ".\assets" ".\cmake-build-debug\Debug\assets" /E /I /H /Y

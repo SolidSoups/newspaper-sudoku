@@ -55,5 +55,8 @@ CMakeUserPresets.json
 *-prefix/
 
 .cache/
+.idea/
+build/
+cmake-build-debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/cmake,c++
